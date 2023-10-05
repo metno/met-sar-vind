@@ -22,8 +22,8 @@ NETCDFDIR = '%s/netcdf' % BASEDIR
 LOGDIR = '%s/log' % BASEDIR
 MODELDIR = '/lustre/storeB/project/metproduction/products/arome_arctic'
 
-USER_NBS = 'frode.dinessen'
-PASSWD_NBS = 'n:kC0Q5H'
+USER_NBS = ''
+PASSWD_NBS = ''
 
 
 class SARData():
