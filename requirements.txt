@@ -10,3 +10,4 @@ scipy
 six
 urllib3
 xdg
+owslib

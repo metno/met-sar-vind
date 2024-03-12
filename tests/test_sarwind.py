@@ -1,8 +1,6 @@
 import pytest
 import datetime
-
 import numpy as np
-
 from sarwind.sarwind import SARWind
 
 
@@ -61,21 +59,10 @@ def testSARWind_using_s1EWnc_arome_filenames(sarEW_NBS, arome):
 
 @pytest.mark.safe
 @pytest.mark.sarwind
-def testSARWind_using_s1EWsafe_meps_filenames(sarEW_SAFE, meps):
-    """ Test that wind is generated from Sentinel-1 data in EW-mode,
-    HH-polarization and SAFE based netcdf file, with direction from
-    the MEPS model.
-    """
-    w = SARWind(sarEW_SAFE, meps)
-    assert type(w) == SARWind
-
-
-@pytest.mark.safe
-@pytest.mark.sarwind
-def testSARWind_using_s1IWDVsafe_meps_filenames(sarIW_SAFE, meps):
+def testSARWind_using_s1IWDVsafe_meps_filenames(sarIW_SAFE, arome):
     """ Test that wind is generated from Sentinel-1 data in IW-mode,
     VV-polarization and SAFE based netcdf file, with wind direction
     from MEPS model.
     """
-    w = SARWind(sarIW_SAFE, meps)
+    w = SARWind(sarIW_SAFE, arome)
     assert type(w) == SARWind

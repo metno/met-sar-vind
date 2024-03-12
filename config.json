@@ -1,0 +1,8 @@
+{
+    "outpath": "/home/froded/data/sarwind/",
+    "scp": "False",
+    "scp_path": "/lustre/storeB/project/fou/fd/project/sar-wind/products/",
+    "scp_host": "ppi-clogin-a1.met.no",
+    "scp_user": "froded",
+    "id_rsa": "/home/ubuntu/.ssh/id_rsa"
+}
